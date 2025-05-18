@@ -1,0 +1,103 @@
+.breathing-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.back-button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 6px 12px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.duration-buttons {
+  margin-bottom: 20px;
+}
+
+.duration-btn {
+  margin: 0 5px;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.duration-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.circle-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.inner-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.breathing-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #2196f3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.timer {
+  font-size: 18px;
+  color: #333;
+}
+
+.control-buttons {
+  margin-top: 20px;
+}
+
+.start-btn,.stop-btn,.Re-btn, .sound-btn {
+  padding: 10px 16px;
+  margin: 0 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.start-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+.stop-btn {
+  background-color: #ed4444;
+  color: white;
+}
+.Re-btn {
+  background-color: #637443;
+  color: white;
+}
+.sound-btn {
+  background-color: #f1f1f1;
+}

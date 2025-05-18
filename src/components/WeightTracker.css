@@ -1,0 +1,118 @@
+.weight-tracker {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgb(59 130 246 / 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e3a59;
+}
+
+.weight-tracker h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.input-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.input-group input[type='number'],
+.input-group input[type='date'] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input[type='number']:focus,
+.input-group input[type='date']:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 6px #3b82f6aa;
+}
+
+.input-group button {
+  background: #3b82f6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background: #2563eb;
+}
+
+.entries-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #cbd5e1;
+}
+
+.entries-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 16px;
+}
+
+.entries-list li .date {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.entries-list li .weight {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.entries-list li .delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 0 8px;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+.entries-list li .delete-btn:hover {
+  color: #b91c1c;
+}
+
+.empty {
+  text-align: center;
+  color: #94a3b8;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .weight-tracker {
+    padding: 16px;
+  }
+  .input-group {
+    flex-direction: column;
+  }
+  .input-group button {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

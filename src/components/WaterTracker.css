@@ -1,0 +1,157 @@
+.water-tracker {
+  max-width: 400px;
+  margin: 1.5rem auto;
+  padding: 1rem 1.2rem 2rem;
+  background: #e0f7fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(0 188 212 / 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #004d40;
+  text-align: center;
+}
+
+.water-tracker h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.progress {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cups {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cup {
+  width: 30px;
+  height: 45px;
+  background: #b2dfdb;
+  border-radius: 8px 8px 12px 12px;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+}
+
+.cup.filled {
+  background: #00bcd4;
+  box-shadow: inset 0 6px 8px rgba(0, 105, 123, 0.8);
+}
+
+.cup:focus {
+  outline: 2px solid #00796b;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #00695c;
+  padding: 0 0.5rem;
+}
+
+.notes {
+  width: 100%;
+  border-radius: 8px;
+  border: 1.5px solid #004d40;
+  padding: 0.5rem;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.reset-btn {
+  background: #004d40;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgb(0 77 64 / 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #00796b;
+}
+
+.history-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.history-section h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #004d40;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.history-date {
+  min-width: 110px;
+  font-weight: 600;
+  color: #00695c;
+}
+
+.history-cups {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: nowrap;
+}
+
+.history-cup {
+  width: 18px;
+  height: 27px;
+  background: #b2dfdb;
+  border-radius: 5px 5px 8px 8px;
+  box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.12);
+}
+
+.history-cup.filled {
+  background-color: #00bcd4;
+  box-shadow: inset 0 5px 6px rgba(0, 105, 123, 0.7);
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .water-tracker {
+    max-width: 90vw;
+    padding: 1rem;
+  }
+
+  .cups {
+    gap: 0.3rem;
+  }
+
+  .cup {
+    width: 24px;
+    height: 36px;
+  }
+
+  .history-date {
+    min-width: 90px;
+  }
+
+  .history-cup {
+    width: 14px;
+    height: 21px;
+  }
+}

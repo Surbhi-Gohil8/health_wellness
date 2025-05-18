@@ -1,0 +1,47 @@
+.health-summary {
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e3a59;
+}
+
+.health-summary h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #3b82f6;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(46, 58, 89, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 25px rgba(59, 130, 246, 0.3);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #475569;
+}
