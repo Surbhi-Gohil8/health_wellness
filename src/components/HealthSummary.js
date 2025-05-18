@@ -30,9 +30,10 @@ export default function HealthSummary() {
     <div style={{ padding: 20, fontFamily: 'Arial, sans-serif', maxWidth: 700, margin: '0 auto' }}>
       <h1 style={{ textAlign: 'center', color: '#4a90e2' }}>Your Health Summary</h1>
 
-      <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: 20 }}>
+      {/* Charts stacked vertically */}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 20 }}>
         {/* Pie chart for mood */}
-        <div>
+        <div style={{ marginBottom: 40 }}>
           <h3 style={{ textAlign: 'center' }}>Mood Distribution</h3>
           <PieChart width={300} height={300}>
             <Pie
@@ -74,7 +75,7 @@ export default function HealthSummary() {
         </div>
       </div>
 
-      {/* Other cards */}
+      {/* Other summary cards */}
       <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: 40 }}>
         <div style={cardStyle}>
           <h3>Journal Entries</h3>
